@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hoteldjangoapp',
+    'hoteldjangoapp',  
 ]
 
 MIDDLEWARE = [
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'mysite.urls'
+ROOT_URLCONF = 'hoteldjangoproject.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = '+.wsgi.application'
+WSGI_APPLICATION = 'hoteldjangoproject.wsgi.application'
 
 
 # Database
@@ -120,8 +120,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static_in_env')]
-STATIC_ROOT = os.path.join (BASE_DIR,'static/')
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+STATIC_ROOT = os.path.join (BASE_DIR,'staticfiles/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
