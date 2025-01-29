@@ -1,0 +1,41 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Django-related
+db.sqlite3
+*.log
+media/
+staticfiles/
+
+# Ignore compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE and editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignore coverage and test reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Ignore Django migrations cache files
+*/migrations/*.pyc
+*/migrations/__pycache__/
+
+# Ignore deployment-related files
+*.DS_Store
+*.swp
